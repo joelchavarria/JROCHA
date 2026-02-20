@@ -41,7 +41,7 @@ export const HomePage = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80"
+            src="https://esmeraldascolombia.com/cdn/shop/files/Banner-Aretes-2560x720.jpg?v=1646843845&width=2559"
             alt="Joyería Rocha - Granada Nicaragua"
             className="w-full h-full object-cover"
           />
