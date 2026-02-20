@@ -41,7 +41,7 @@ export const HomePage = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1762195022005-2750cf3809f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwZGlhbW9uZCUyMG5lY2tsYWNlJTIwbW9kZWwlMjBmYXNoaW9ufGVufDB8fHx8MTc3MTYwNzIyNnww&ixlib=rb-4.1.0&q=85"
+            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80"
             alt="Luxury jewelry"
             className="w-full h-full object-cover"
           />
