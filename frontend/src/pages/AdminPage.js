@@ -348,7 +348,7 @@ export const AdminPage = () => {
                       value={settings.whatsapp_number}
                       onChange={(e) => setSettings({...settings, whatsapp_number: e.target.value})}
                       className="input-elegant"
-                      placeholder="89953348"
+                      placeholder="81171182"
                       data-testid="settings-whatsapp"
                     />
                     <p className="text-white/30 text-xs mt-2">Solo números, sin código de país</p>

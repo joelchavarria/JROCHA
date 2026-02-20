@@ -27,7 +27,7 @@ Página web de catálogo de joyería con carrito de compras, categorías (Anillo
 - ✅ Checkout con datos bancarios y botón WhatsApp
 - ✅ Panel admin: productos, pedidos, configuración
 - ✅ Diseño dark luxury con acentos dorados
-- ✅ WhatsApp: 89953348
+- ✅ WhatsApp: 81171182
 
 ## Backlog
 ### P0 (Crítico)

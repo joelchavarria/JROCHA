@@ -160,7 +160,7 @@ class JewelryAPITester:
         # Update settings
         if settings:
             updated_settings = {
-                "whatsapp_number": "89953348",
+                "whatsapp_number": "81171182",
                 "bank_info": {
                     "bank_name": "BAC Credomatic",
                     "account_number": "1234567890",
