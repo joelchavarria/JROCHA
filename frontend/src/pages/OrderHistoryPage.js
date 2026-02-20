@@ -36,7 +36,7 @@ export const OrderHistoryPage = () => {
   const formatPrice = (price) => {
     return new Intl.NumberFormat('es-NI', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'NIO',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }).format(price);

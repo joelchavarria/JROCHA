@@ -9,7 +9,7 @@ export const CartPage = () => {
   const formatPrice = (price) => {
     return new Intl.NumberFormat('es-CR', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'NIO',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }).format(price);
