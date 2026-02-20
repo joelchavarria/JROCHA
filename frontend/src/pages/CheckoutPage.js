@@ -95,9 +95,11 @@ export const CheckoutPage = () => {
       });
 
       // Open WhatsApp
-      const whatsappNumber = settings?.whatsapp_number || '89953348';
+      const whatsappNumber = settings?.whatsapp_number || '0050589953348';
+      // Remove leading zeros and country code formatting
+      const cleanNumber = whatsappNumber.replace(/^00/, '').replace(/^505/, '505');
       const message = createOrderMessage();
-      window.open(`https://wa.me/506${whatsappNumber}?text=${message}`, '_blank');
+      window.open(`https://wa.me/${cleanNumber}?text=${message}`, '_blank');
       
       toast.success('¡Pedido enviado! Te contactaremos pronto.');
       clearCart();

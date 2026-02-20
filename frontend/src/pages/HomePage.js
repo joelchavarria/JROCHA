@@ -42,7 +42,7 @@ export const HomePage = () => {
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80"
-            alt="Luxury jewelry"
+            alt="Joyería Rocha - Granada Nicaragua"
             className="w-full h-full object-cover"
           />
           <div className="hero-overlay absolute inset-0" />
@@ -191,7 +191,7 @@ export const HomePage = () => {
               Escríbenos por WhatsApp y te ayudaremos a encontrar la joya perfecta para ti o para ese momento especial.
             </p>
             <a
-              href="https://wa.me/50689953348?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20joyas"
+              href="https://wa.me/50589953348?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20joyas"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn inline-flex items-center gap-3 px-8 py-4 uppercase tracking-widest text-sm font-bold"
