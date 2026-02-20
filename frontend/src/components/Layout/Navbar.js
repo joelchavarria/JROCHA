@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { ShoppingBag, Menu, X, User, LogOut, History } from 'lucide-react';
-import { useCart } from '../../context/CartContext';
-import { useAuth } from '../../context/AuthContext';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { ShoppingBag, Menu, X, User, LogOut, History } from "lucide-react";
+import { useCart } from "../../context/CartContext";
+import { useAuth } from "../../context/AuthContext";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,51 +14,62 @@ export const Navbar = () => {
   const itemCount = getItemCount();
 
   const navLinks = [
-    { name: 'Inicio', path: '/' },
-    { name: 'Catálogo', path: '/catalogo' },
-    { name: 'Anillos', path: '/catalogo/anillos' },
-    { name: 'Collares', path: '/catalogo/collares' },
-    { name: 'Pulseras', path: '/catalogo/pulseras' },
-    { name: 'Aretes', path: '/catalogo/aretes' },
-    { name: 'Relojes', path: '/catalogo/relojes' },
+    { name: "Inicio", path: "/" },
+    { name: "Catálogo", path: "/catalogo" },
+    { name: "Anillos", path: "/catalogo/anillos" },
+    { name: "Collares", path: "/catalogo/collares" },
+    { name: "Pulseras", path: "/catalogo/pulseras" },
+    { name: "Aretes", path: "/catalogo/aretes" },
+    { name: "Relojes", path: "/catalogo/relojes" },
   ];
 
   const isActive = (path) => {
-    if (path === '/') return location.pathname === '/';
+    if (path === "/") return location.pathname === "/";
     return location.pathname.startsWith(path);
   };
 
   const handleLogout = async () => {
     await logout();
-    navigate('/');
+    navigate("/");
   };
 
   return (
     <>
-      <nav 
+      <nav
         className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-xl border-b border-white/5"
         data-testid="navbar"
       >
         <div className="container-luxury">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link 
-              to="/" 
-              className="text-2xl font-normal tracking-tight"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+            <Link
+              to="/"
+              className="flex items-center gap-3 group"
               data-testid="logo-link"
+              aria-label="Ir al inicio - Joyería Rocha"
             >
-              <span className="text-white">Joyería</span>
-              <span className="text-[#D4AF37]"> Rocha</span>
+              <img
+                src="/logo-rocha.svg"
+                alt="Logo Joyería Rocha"
+                className="h-9 w-9 object-contain transition-transform duration-300 group-hover:scale-110"
+              />
+
+              <span
+                className="text-2xl font-normal tracking-tight"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                <span className="text-white">Joyería</span>
+                <span className="text-[#D4AF37]"> Rocha</span>
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
-              {navLinks.map(link => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`nav-link ${isActive(link.path) ? 'nav-active text-[#D4AF37]' : ''}`}
+                  className={`nav-link ${isActive(link.path) ? "nav-active text-[#D4AF37]" : ""}`}
                   data-testid={`nav-${link.name.toLowerCase()}`}
                 >
                   {link.name}
@@ -108,8 +119,8 @@ export const Navbar = () => {
               )}
 
               {/* Cart */}
-              <Link 
-                to="/carrito" 
+              <Link
+                to="/carrito"
                 className="relative p-2 text-white/70 hover:text-white transition-colors"
                 data-testid="cart-link"
               >
@@ -146,8 +157,8 @@ export const Navbar = () => {
           >
             <div className="flex flex-col h-full p-6">
               <div className="flex justify-between items-center mb-12">
-                <Link 
-                  to="/" 
+                <Link
+                  to="/"
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-2xl font-normal tracking-tight"
                   style={{ fontFamily: "'Playfair Display', serif" }}
@@ -165,18 +176,18 @@ export const Navbar = () => {
               </div>
 
               <div className="flex flex-col gap-6">
-                {navLinks.map(link => (
+                {navLinks.map((link) => (
                   <Link
                     key={link.path}
                     to={link.path}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`text-2xl font-light ${isActive(link.path) ? 'text-[#D4AF37]' : 'text-white/70 hover:text-white'}`}
+                    className={`text-2xl font-light ${isActive(link.path) ? "text-[#D4AF37]" : "text-white/70 hover:text-white"}`}
                     style={{ fontFamily: "'Playfair Display', serif" }}
                   >
                     {link.name}
                   </Link>
                 ))}
-                
+
                 <div className="border-t border-white/10 pt-6 mt-4">
                   {isAuthenticated ? (
                     <>
