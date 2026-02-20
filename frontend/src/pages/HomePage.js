@@ -191,7 +191,7 @@ export const HomePage = () => {
               Escríbenos por WhatsApp y te ayudaremos a encontrar la joya perfecta para ti o para ese momento especial.
             </p>
             <a
-              href="https://wa.me/50589953348?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20joyas"
+              href="https://wa.me/50581171182?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20joyas"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn inline-flex items-center gap-3 px-8 py-4 uppercase tracking-widest text-sm font-bold"

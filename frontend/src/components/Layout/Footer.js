@@ -26,7 +26,7 @@ export const Footer = () => {
               Joyería de lujo artesanal. Cada pieza cuenta una historia única de elegancia y sofisticación.
             </p>
             <a
-              href="https://wa.me/50589953348"
+              href="https://wa.me/50581171182"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#25D366] hover:text-[#128C7E] transition-colors"
@@ -53,7 +53,7 @@ export const Footer = () => {
           <div>
             <h4 className="caption text-white/50 mb-6">Contacto</h4>
             <div className="space-y-3 text-white/70 font-light">
-              <p>WhatsApp: +505 8995-3348</p>
+              <p>WhatsApp: +505 8117-1182</p>
               <p>Granada, Nicaragua</p>
               <p>Horario: Lunes a Sábado</p>
               <p>9:00 AM - 6:00 PM</p>

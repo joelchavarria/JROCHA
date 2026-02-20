@@ -47,7 +47,7 @@ export const ProductDetailPage = () => {
 
   const handleWhatsAppInquiry = () => {
     const message = `Hola, me interesa el producto: ${product.name} (${formatPrice(product.price)})`;
-    window.open(`https://wa.me/50589953348?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/50581171182?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   if (loading) {

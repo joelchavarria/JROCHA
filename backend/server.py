@@ -113,7 +113,7 @@ class StoreSettings(BaseModel):
     model_config = ConfigDict(extra="ignore")
     store_name: str = "Joyería Rocha"
     location: str = "Granada, Nicaragua"
-    whatsapp_number: str = "0050589953348"
+    whatsapp_number: str = "0050581171182"
     bank_info: BankInfo = Field(default_factory=BankInfo)
 
 # ============== USER & AUTH MODELS ==============
