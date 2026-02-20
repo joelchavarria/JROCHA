@@ -148,7 +148,7 @@ class JewelryAPITester:
         
         # Update order status
         if created_order and 'id' in created_order:
-            self.run_test("Update Order Status", "PUT", f"orders/{created_order['id']}/status", 200, params={"status": "confirmed"})
+            self.run_test("Update Order Status", "PUT", f"orders/{created_order['id']}/status?status=confirmed", 200)
         
         return orders
 
