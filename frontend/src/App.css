@@ -1,34 +1,178 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* App specific styles */
+
+/* Hero section gradient overlay */
+.hero-overlay {
+  background: linear-gradient(to top, #050505 0%, transparent 50%, rgba(5,5,5,0.3) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Card hover effect */
+.card-hover {
+  transition: border-color 0.5s ease;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.card-hover:hover {
+  border-color: rgba(212, 175, 55, 0.3);
 }
 
-.App-link {
-    color: #61dafb;
+/* WhatsApp button */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  transform: scale(1.02);
+}
+
+/* Image loading skeleton */
+.image-skeleton {
+  background: linear-gradient(90deg, #0A0A0A 0%, #1a1a1a 50%, #0A0A0A 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Category card */
+.category-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Price styling */
+.price-tag {
+  font-family: 'Manrope', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Cart badge */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #D4AF37;
+  color: #000000;
+  font-size: 0.625rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.5rem;
+}
+
+/* Toast customization */
+[data-sonner-toast] {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+/* Admin panel */
+.admin-card {
+  background: #0A0A0A;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.admin-card:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  background: rgba(5, 5, 5, 0.98);
+  backdrop-filter: blur(20px);
+}
+
+/* Product detail gallery */
+.gallery-thumbnail {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-thumbnail:hover,
+.gallery-thumbnail.active {
+  opacity: 1;
+}
+
+/* Checkout summary */
+.checkout-summary {
+  background: #0A0A0A;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Empty state */
+.empty-state {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Breadcrumb */
+.breadcrumb-link {
+  color: rgba(255,255,255,0.5);
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #D4AF37;
+}
+
+/* Quantity selector */
+.qty-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+  border-color: #D4AF37;
+  color: #D4AF37;
+}
+
+/* Active nav link */
+.nav-active {
+  color: #D4AF37 !important;
 }
