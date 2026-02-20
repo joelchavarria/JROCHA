@@ -95,7 +95,7 @@ export const CheckoutPage = () => {
       });
 
       // Open WhatsApp
-      const whatsappNumber = settings?.whatsapp_number || '0050589953348';
+      const whatsappNumber = settings?.whatsapp_number || '0050581171182';
       // Remove leading zeros and country code formatting
       const cleanNumber = whatsappNumber.replace(/^00/, '').replace(/^505/, '505');
       const message = createOrderMessage();
