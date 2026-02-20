@@ -1,0 +1,134 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Lumina & Co.",
+      "tone": "Nocturnal Opulence",
+      "brand_archetype": "The Magician x The Ruler",
+      "core_values": ["Timeless", "Mysterious", "Hand-Crafted", "Exclusive"]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "accent": "Cinzel, serif"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-[1.1]",
+        "h2": "text-4xl md:text-5xl font-normal tracking-tight",
+        "h3": "text-2xl md:text-3xl font-normal",
+        "body_lg": "text-lg md:text-xl font-light leading-relaxed",
+        "body": "text-base font-light leading-relaxed text-muted-foreground",
+        "caption": "text-xs uppercase tracking-[0.2em] font-bold text-accent-foreground/70"
+      },
+      "usage_rules": [
+        "Headings MUST use Playfair Display.",
+        "Nav links and buttons MUST use Manrope Uppercase.",
+        "Price tags MUST use Manrope with 'tabular-nums' class.",
+        "Never use bold weight for headings; rely on size and font-family for hierarchy."
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": "#050505",
+        "foreground": "#EDEDED",
+        "card": "#0A0A0A",
+        "card_foreground": "#FFFFFF",
+        "primary": "#D4AF37",
+        "primary_foreground": "#000000",
+        "secondary": "#18181b",
+        "secondary_foreground": "#FAFAFA",
+        "muted": "#27272a",
+        "muted_foreground": "#A1A1AA",
+        "accent": "#D4AF37",
+        "border": "#27272a",
+        "input": "#27272a",
+        "ring": "#D4AF37"
+      },
+      "gradients": {
+        "gold_shine": "linear-gradient(135deg, #D4AF37 0%, #F5D76E 50%, #D4AF37 100%)",
+        "dark_veil": "linear-gradient(to top, #050505 0%, transparent 100%)"
+      },
+      "theme_strategy": "dark_mode_only_for_storefront"
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "px-6 md:px-12 lg:px-24",
+        "section_gap": "py-24 md:py-32",
+        "grid_gap": "gap-6 md:gap-12"
+      },
+      "grid_patterns": [
+        "Use 'Bento' grids: mix of 1x1, 2x1, and 2x2 cells.",
+        "Product grids should be strictly 2-column on mobile, 4-column on desktop.",
+        "Hero section must be full viewport height (min-h-screen)."
+      ],
+      "container_width": "max-w-[1600px] mx-auto"
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-white text-black hover:bg-[#D4AF37] hover:text-black rounded-none px-8 py-4 uppercase tracking-widest text-sm font-bold transition-all duration-300",
+        "secondary": "bg-transparent border border-white/20 text-white hover:border-white hover:bg-white/5 rounded-none px-8 py-4 uppercase tracking-widest text-sm transition-all duration-300",
+        "ghost": "text-white/70 hover:text-white hover:bg-white/5 rounded-none uppercase tracking-widest text-xs"
+      },
+      "cards": {
+        "product": "group relative bg-transparent border-none overflow-hidden",
+        "feature": "bg-[#0A0A0A] border border-white/5 p-8 hover:border-[#D4AF37]/30 transition-colors duration-500"
+      },
+      "inputs": {
+        "style": "bg-transparent border-b border-white/20 rounded-none px-0 py-4 focus:border-[#D4AF37] focus:ring-0 placeholder:text-white/20 text-lg transition-colors"
+      },
+      "navigation": {
+        "style": "fixed top-0 w-full z-50 bg-black/50 backdrop-blur-xl border-b border-white/5"
+      }
+    },
+    "motion": {
+      "animations": {
+        "fade_in_up": "animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out",
+        "image_reveal": "transition-transform duration-700 ease-out group-hover:scale-105"
+      },
+      "micro_interactions": "All interactive elements must have a scale-95 active state and a color transition on hover."
+    },
+    "assets": {
+      "images": {
+        "hero": {
+          "url": "https://images.unsplash.com/photo-1762195022005-2750cf3809f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwZGlhbW9uZCUyMG5lY2tsYWNlJTIwbW9kZWwlMjBmYXNoaW9ufGVufDB8fHx8MTc3MTYwNzIyNnww&ixlib=rb-4.1.0&q=85",
+          "alt": "Elegant model wearing diamond necklace",
+          "position": "Hero Background"
+        },
+        "categories": {
+          "rings": "https://images.unsplash.com/photo-1758995115445-c91788f5aa24?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBkaWFtb25kJTIwcmluZyUyMGdvbGQlMjBibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcxNjA3MjI1fDA&ixlib=rb-4.1.0&q=85",
+          "necklaces": "https://images.unsplash.com/photo-1762195024277-b3e9f3bda4dd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwZGlhbW9uZCUyMG5lY2tsYWNlJTIwbW9kZWwlMjBmYXNoaW9ufGVufDB8fHx8MTc3MTYwNzIyNnww&ixlib=rb-4.1.0&q=85",
+          "bracelets": "https://images.unsplash.com/photo-1767921804162-9c55a278768d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBnb2xkJTIwYnJhY2VsZXQlMjBqZXdlbHJ5fGVufDB8fHx8MTc3MTYwNzIyN3ww&ixlib=rb-4.1.0&q=85",
+          "earrings": "https://images.unsplash.com/photo-1584948555826-600d0ac457c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwyfHxkaWFtb25kJTIwZWFycmluZ3MlMjBsdXh1cnklMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3MTYwNzIyOHww&ixlib=rb-4.1.0&q=85",
+          "watches": "https://images.unsplash.com/photo-1768062251819-651433f1108b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB3cmlzdCUyMHdhdGNoJTIwbWVuJTIwd29tZW58ZW58MHx8fHwxNzcxNjA3MjI4fDA&ixlib=rb-4.1.0&q=85"
+        },
+        "about": "https://images.pexels.com/photos/20838859/pexels-photo-20838859.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      "icons": "Use 'lucide-react' with thin stroke width (1.5px) to match the elegant typography."
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL_DEPENDENCIES: `yarn add @fontsource/playfair-display @fontsource/manrope @fontsource/cinzel framer-motion sonner`",
+    "THEME_SETUP: Apply the dark theme colors globally in `index.css`. The entire app (except maybe admin) should default to dark mode.",
+    "NAVIGATION: Create a 'mega-menu' style nav or a very clean, centered logo nav with split links (Shop left, About right).",
+    "PRODUCT_CARD: Do NOT use a border on the card. Use the image aspect-ratio-[4/5]. Text below should be minimal.",
+    "WHATSAPP_CHECKOUT: The checkout flow is: Cart -> Form (Name, Address) -> 'Order via WhatsApp' Button. No stripe/payment integration.",
+    "ADMIN_PANEL: This can be a simpler, lighter theme or a 'Command Center' dark theme. Prioritize data density here.",
+    "UNIVERSAL_RULE: If it looks like a standard Bootstrap/Material site, it is wrong. It must look like a fashion magazine.",
+    "IMAGES: Use the provided Unsplash URLs. Do not use placeholders.",
+    "TESTING: Add `data-testid` to all interactive elements (buttons, inputs, links)."
+  ],
+  "universal_guidelines": {
+    "do_not_use": [
+      "Gradients on text (unless specified gold)",
+      "Rounded corners > 8px (keep it sharp/elegant)",
+      "Blue/Purple primary colors",
+      "Standard system fonts (Arial/Times)"
+    ],
+    "must_use": [
+      "Generous white space (padding-y-32)",
+      "Uppercase tracking-widest labels",
+      "Smooth scrolling (Lenis recommended if possible, or standard smooth behavior)",
+      "Framer motion for page transitions"
+    ]
+  }
+}
